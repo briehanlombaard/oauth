@@ -84,7 +84,7 @@ def logged_in(blueprint, token):
 
     if oauth.user:
         login_user(oauth.user)
-        flash('Successfully signed in with GitHub.')
+        flash('Successfully signed in with provider.')
 
     else:
         # Create a new local user account for this user
